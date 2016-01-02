@@ -1,0 +1,23 @@
+{
+  "name": "throwing-darts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChazAttack73/throwing-darts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChazAttack73/throwing-darts/issues"
+  },
+  "homepage": "https://github.com/ChazAttack73/throwing-darts#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.2.0"
+  }
+}
