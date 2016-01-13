@@ -6,7 +6,6 @@ var bonus = 100;
 
 function scoreThrows() {
 
-
  //========== for loop simulating 3 throws
   for( var i = 0; i < 3; i++ ) {
 
@@ -21,16 +20,15 @@ function scoreThrows() {
     } else scoreArr.push( 10 );
 
     scoreOfRound += scoreArr[i];
-    console.log( scoreOfRound );
-  }
 
-  if(
-    scoreArr[0] > 9 &&
-    scoreArr[1] > 9 &&
-    scoreArr[2] > 9 ) {
-    scoreOfRound += bonus;
+    if(
+      scoreArr[0] > 9 &&
+      scoreArr[1] > 9 &&
+      scoreArr[2] > 9 ) {
+      scoreOfRound += bonus;
+    }
   }
+  console.log( scoreArr );
   return scoreOfRound;
 }
-
 console.log( scoreThrows() );
