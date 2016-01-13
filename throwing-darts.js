@@ -4,7 +4,7 @@ var scoreArr = [];
 var scoreOfRound = 0;
 var bonus = 100;
 
-function scoreThrows( arr ) {
+function scoreThrows() {
 
 
  //========== for loop simulating 3 throws
@@ -12,7 +12,6 @@ function scoreThrows( arr ) {
 
    //========== randomly generate radius value
    var radius = Math.floor( ( Math.random() * 20 ) + 1 );
-   console.log( radius );
 
    //========== give score values to the throws depending on radius value
     if( radius > 10 ) {
@@ -20,12 +19,15 @@ function scoreThrows( arr ) {
     } else if ( 5 <= radius && radius <= 10 ) {
       scoreArr.push( 5 );
     } else scoreArr.push( 10 );
-    console.log( scoreArr );
 
     scoreOfRound += scoreArr[i];
     console.log( scoreOfRound );
   }
-  if( scoreArr[i] > 9 ) {
+
+  if(
+    scoreArr[0] > 9 &&
+    scoreArr[1] > 9 &&
+    scoreArr[2] > 9 ) {
     scoreOfRound += bonus;
   }
   return scoreOfRound;
